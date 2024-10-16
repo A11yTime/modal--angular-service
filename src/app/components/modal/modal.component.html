@@ -1,0 +1,29 @@
+<!-- modal.component.html -->
+<div class="modal" role="dialog" aria-modal="true">
+    <div #modalContent class="modal-content">
+      <button class="close-button" (click)="closeModal()" aria-label="Close modal">
+        <span aria-hidden="true">✖</span>
+      </button>
+      <h2 class="modal-title">Modal Title</h2>
+      <p class="modal-description">Some content inside the modal...</p>
+      <form>
+        <div class="form-group">
+          <label for="firstname">First Name:</label>
+          <input type="text" id="firstname" placeholder="Enter your first name" />
+        </div>
+        <div class="form-group">
+          <label for="lastname">Last Name:</label>
+          <input type="text" id="lastname" placeholder="Enter your last name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" placeholder="Enter your email here" />
+        </div>
+        <div class="form-actions">
+          <button type="button" (click)="closeModal()">Cancel</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
